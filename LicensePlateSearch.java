@@ -12,8 +12,8 @@ public class LicensePlateSearch {
     }
 
     public static void main(String[] args) {
-        String[] plates = { "YGN1234", "MDY9090", "YGN7777", "NPT8888" };
-        String target = "YGN7777";
+        String[] plates = { "YGN1234", "MDY9090", "YG7777", "NPT8888" };
+        String target = "NPT8888";
         System.out.println(plateSearch(plates, target) ? "Found in YGN" : "Not Found");
     }
 }

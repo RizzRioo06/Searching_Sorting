@@ -1,5 +1,5 @@
 public class CountWord {
-    public static int countRec(String[] arr, String word, int i) {
+    public static int countRec(String[] arr, String word, int i) { // Linear search
         if (i >= arr.length)
             return 0;
         return (arr[i].equals(word) ? 1 : 0) + countRec(arr, word, i + 1);
@@ -7,7 +7,9 @@ public class CountWord {
 
     public static void main(String[] args) {
         String[] words = { "Java", "C", "Java", "Python" };
-        System.out.println("Occurrences of Java: " + countRec(words, "Java", 0));
+        String[] Courses = { "Intro to SE", "Java", "Python" };
+        System.out.println("Occurrences of C: " + countRec(Courses, "C", 0));
+        System.out.println("Occurrences of Java: " + countRec(words, "Intro to SE", 0));
     }
 }
 // This code demonstrates a recursive approach to count the occurrences of a

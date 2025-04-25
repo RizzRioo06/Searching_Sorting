@@ -12,7 +12,7 @@ public class ProductBinarySearch {
 
     public static void main(String[] args) {
         String[] items = { "Bag", "Laptop", "Phone", "Tablet" };
-        String search = "Phone";
+        String search = "Phon";
         int result = binarySearch(items, search, 0, items.length - 1);
         System.out.println((result != -1) ? "Product Found" : "Not Found");
     }
